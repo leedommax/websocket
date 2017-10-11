@@ -28,8 +28,8 @@
             $('form').submit(function(){
               socket.emit('chat message', $('#m').val());
               $('#m').val('');
+              console.log('webtest');
                 console.log("test2");
-              console.log('webtest')
               return false;
             });
              socket.on('chat message', function(msg){
